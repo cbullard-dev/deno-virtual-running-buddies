@@ -12,7 +12,7 @@ mf.mock("POST@/api/apps.datastore.put", () => {
 
 const { createContext } = SlackFunctionTester("log_run");
 
-Deno.test("Confirm team output", async () => {
+Deno.test("Confirm team formatted output", async () => {
   const inputs = {
     runner_stats: [{
       runner: "U0123456",
@@ -34,7 +34,7 @@ Deno.test("Confirm team output", async () => {
   );
 });
 
-Deno.test("Confirm runner output", async () => {
+Deno.test("Confirm runner formatted output", async () => {
   const inputs = {
     runner_stats: [{
       runner: "U1",
