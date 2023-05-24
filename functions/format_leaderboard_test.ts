@@ -10,7 +10,7 @@ mf.mock("POST@/api/apps.datastore.put", () => {
   return new Response(JSON.stringify({ ok: true }));
 });
 
-const { createContext } = SlackFunctionTester("log_run");
+const { createContext } = SlackFunctionTester("format_leaderboard");
 
 Deno.test("Confirm team formatted output", async () => {
   const inputs = {
